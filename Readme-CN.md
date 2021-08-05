@@ -39,7 +39,7 @@
     {
         test: /\.vue$/,
         exclude: [/node_modules/],
-        loader: 'viai18n-loader',
+        loader: 'vue-i18n-loader',
         enforce: 'pre',
         options: {
           updateMessagesFile: ctx.isClient && ctx.isDev, // 只有在dev环境下编译client才会更新json文件（请将对应的json纳入git版本管理，正式部署不需要重新生成）

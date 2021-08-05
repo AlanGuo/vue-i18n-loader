@@ -9,12 +9,12 @@ module.exports = async function (source, map) {
   const options = Object.assign({}, loaderUtils.getOptions(this), urlQuery)
   if (!options.languages || !options.languages.length) {
     // languages must be set
-    throw new Error('no languages are given in config for viai18n-loader')
+    throw new Error('no languages are given in config for vue-i18n-loader')
   }
 
   // ignore excluded files
   if (!this.resourcePath || (options.exclude && this.resourcePath.match(options.exclude))) return source
-  if (/\/\*\s+viai18n-disable\s+\*\//.test(source)) return source // igore files with /* viai18n-disable */
+  if (/\/\*\s+vue-i18n-disable\s+\*\//.test(source)) return source // igore files with /* vue-i18n-disable */
   // use regString or delimiter to find targets
   let matchRegString = options.regString
   if (options.delimiter) {

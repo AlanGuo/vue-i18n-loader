@@ -38,7 +38,7 @@ Config example based on [Nuxt.js](https://nuxtjs.org/).
     {
         test: /\.vue$/,
         exclude: [/node_modules/],
-        loader: 'viai18n-loader',
+        loader: 'vue-i18n-loader',
         enforce: 'pre',
         options: {
           updateMessagesFile: ctx.isClient && ctx.isDev, // only update messages file when it's dev and client(when using ssr)

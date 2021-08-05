@@ -2,7 +2,7 @@ import chineseS2T from 'chinese-s2t';
 
 export default {
   head: {
-    title: 'Viai18n-loader usage example',
+    title: 'vue-i18n-loader usage example',
   },
   build: {
     extend(webpackConfig, { isDev, isClient }) {
@@ -10,7 +10,7 @@ export default {
       webpackConfig.module.rules.push({ // this loader will generate *.messages.json beside *.vue files
         test: /\.vue$/,
         exclude: [/node_modules/,/\.nuxt/],
-        loader: 'viai18n-loader',
+        loader: 'vue-i18n-loader',
         enforce: 'pre',
         options: {
           updateMessagesFile: isClient && isDev, // only update messages file when it's dev and client(when using ssr)

@@ -1,5 +1,5 @@
 {
-    "name": "viai18n-loader-example",
+    "name": "vue-i18n-loader-example",
     "scripts": {
         "dev": "nuxt --port=3001"
     },
