@@ -1,0 +1,22 @@
+{
+  "name": "vue-i18n-loader",
+  "version": "0.1.0",
+  "description": "Another i18n solution for Vue (Nuxt) with auto generated keys",
+  "main": "vue-i18n-loader/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bitapp/vue-i18n-loader"
+  },
+  "keywords": [
+    "vue",
+    "i18n"
+  ],
+  "author": "alan",
+  "license": "MIT",
+  "dependencies": {
+    "blueimp-md5": "^2.10.0",
+    "esprima": "^4.0.1",
+    "htmlparser2": "^3.10.0",
+    "webpack": "^4.28.3"
+  }
+}
